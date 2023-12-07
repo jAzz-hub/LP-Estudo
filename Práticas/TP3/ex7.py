@@ -2,12 +2,21 @@
 
     Questão 7
     
-    Verifique se todos os elementos de uma lista são distintos utilizando estritamente o paradígma funcional
-
+    Verifique se todos os elementos de uma lista são distintos 
 '''
 
 from functools import reduce
 
-output = lambda : all( i not in [range(1,6)] for i in [range(8,4,-1)])
+list1 = lambda : [x for x in range(1,6)]+[x for x in range(4,7)]
 
-print(output())
+
+sorted_list = lambda array: sorted(array)
+
+
+distinct_search = lambda array, length : False if array[length] == array[length-1] else (distinct_search(array, length-1 if length!=0 else True))
+
+distintos = lambda : distinct_search( sorted_list(list1()), len(list1())-1 )
+
+print(sorted_list(list1()))
+
+print(distintos())
