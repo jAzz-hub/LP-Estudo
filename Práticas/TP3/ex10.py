@@ -5,11 +5,11 @@
     Calcular todas as somas parciais de uma lista de inteiros
 
 '''
-list1 = lambda : [x for x in range(6,0, -1)]
+list1 = lambda : [x for x in range(1,5)]
 
-sum_from_0_to_limit = lambda array, i, r, limit: sum_from_0_to_limit(array, i+1, r+array[i], limit) if i <= limit else r
+soma_de_zero_ate_x = lambda array, i, r, limit: soma_de_zero_ate_x(array, i+1, r+array[i], limit) if i <= limit else r
 
-somas_parciais = lambda array : [sum_from_0_to_limit(array, 0, 0, index) for index in range(0, len(array))]
+somas_parciais = lambda array : [soma_de_zero_ate_x(array, 0, 0, index) for index in range(0, len(array))]
 
 print(list1())
 

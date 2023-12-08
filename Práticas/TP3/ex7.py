@@ -5,8 +5,6 @@
     Verifique se todos os elementos de uma lista são distintos 
 '''
 
-from functools import reduce
-
 list1 = lambda : [x for x in range(1,6)]+[x for x in range(4,7)]
 
 
