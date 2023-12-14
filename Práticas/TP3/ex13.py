@@ -1,7 +1,7 @@
 
 '''
 
-    Questão 12
+    Questão 13
     
     remover os n últimos elementos de uma lista de inteiros
     
