@@ -19,4 +19,3 @@ answer = lambda array, n : array[:len(array)-n] if n > 0 and n < len(array) else
 output = lambda array, n : print(f'input: \n\t\t vetor: {array} \n\t\t n = {n} \n output: \t{answer(array,n)}')
 
 output(random_list(),n())
-
